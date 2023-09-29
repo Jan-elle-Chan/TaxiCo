@@ -1,0 +1,196 @@
+d<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Assignment G-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
+    <title>Ambassador Taxi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Ambassador Taxi</h1>
+      <nav class="flex-container nowrap">
+        <div class="menu-label">Menu</div>
+        <ul id="nav-items" class="palette2">
+          <!-- using a list for navigation items is the correct semantic way to format the links -->
+          <li class="flex-item-nav"><a href="index.html">Home</a></li>
+          <!-- these links don't work, that's ok -->
+          <li class="flex-item-nav"><a href="booking.html">Booking</a></li>
+          <li class="flex-item-nav"><a href="rates.html">Rates</a></li>
+          <li class="flex-item-nav"><a href="services.html">Services</a></li>
+          <li class="flex-item-nav"><a href="about.html">About</a></li>
+        </ul>
+        <a class="toggle" onclick="showNav()">
+          <i class="fa-solid fa-taxi"></i></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-container-vertical">
+        <div class="flex-item palette1">
+          <h2>Airport Shuttle Rates</h2>
+          <table>
+            <caption>The zone rates below are for the first passenger in a party.</caption>
+            <thead>
+                <tr>
+                    <th>Zone</th>
+                    <th>Zone Districts</th>
+                    <th>Price</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>Comox, Cape Lazo, Powell River Ferry Terminal</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>Courtenay</td>
+                    <td>$35.00</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Cumberland, Royston, Merville</td>
+                    <td>$45.00</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>Oyster River, Black Creek, Miracle Beach, Saratoga Beach, Union Bay, Mt Washington(Base
+                        of Mountain)</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>Mt. Washington(Alpine Lodge)</td>
+                    <td>$85.00</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>Bowser, Willow Point, Campbell River, Coombs, Qualicum Beach</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>Parksville</td>
+                    <td>$110.00</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>Nanoose, Lantzville</td>
+                    <td>$130.00</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>Nanaimo, Departure Bay, Port Alberni</td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>Nanaimo South, Duke Point Ferry</td>
+                    <td>$230.00</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>Tofino, Ucluelet</td>
+                    <td>$475.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">All data current as of Nov 6, 2021</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <p>For additional passengers in the same party, add $10.00 for each additional passenger thereafter.</p> 
+
+        <p>More than one party may use the service at a time. A party includes any individual who is traveling alone and any group of family members, friends, or colleagues who are traveling together.</p>
+          
+        <p>Prices INCLUDE 5% GST & Are Subject to Change.</p>
+        <br>
+        <h2>Non-Airport Charters</h2>
+          <table>
+            <caption>The rates below are from Comox Valley</caption>
+            <thead>
+                <tr>
+                    <th>Vehicle Type</th>
+                    <th>Hourly Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6 passenger van</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>14 passenger van or sprinter</td>
+                    <td>$175.00</td>
+                </tr>
+                <tr>
+                  <td>8 passenger stretch limousine</td>
+                  <td>$140.00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="3">All data current as of Nov 6, 2021</td>
+                  </tr>
+              </tfoot>
+          </table>
+        </div>
+        
+        
+        
+      </section>
+      
+    </main>
+    <footer class="palette2">
+      <section class="flex-container footer-item palette3">
+        <div class="flex-item palette3">
+          <h4>Contact Us</h4>
+          <p>
+            Telephone (Local): 1-250--339-5252
+          </p>
+          <p>
+            Telephone (Out of area): 1-877-339-5252
+          </p>
+          <p>
+            <a href = "mailto: gowithambassador@gmail.com">gowithambassador@gmail.com</a>
+          </p>
+          
+          
+        </div>
+        
+        <div class="flex-item palette3">
+          <h4>Upcoming Events</h4>
+          <h4>FAQ</h4>
+          <!-- Add font awesome icons -->
+<a href="https://www.facebook.com/ambassadorshuttle" "#" class="fa fa-facebook"></a>
+<a href="https://twitter.com/ComoxShuttle" "#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UC1MZk4X-pUmuVUcVNwKm1AQ" "#" class="fa fa-youtube"></a>
+        </div>
+        
+      </section>
+      <small
+        >Copyright &copy; 2022 This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</small
+      >
+    </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

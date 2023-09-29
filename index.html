@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Assignment G-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
+    <title>Ambassador Taxi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Ambassador Taxi</h1>
+      <nav class="flex-container nowrap">
+        <div class="menu-label">Menu</div>
+        <ul id="nav-items" class="palette2">
+          <!-- using a list for navigation items is the correct semantic way to format the links -->
+          <li class="flex-item-nav"><a href="index.html">Home</a></li>
+          <!-- these links don't work, that's ok -->
+          <li class="flex-item-nav"><a href="booking.html">Booking</a></li>
+          <li class="flex-item-nav"><a href="rates.html">Rates</a></li>
+          <li class="flex-item-nav"><a href="services.html">Services</a></li>
+          <li class="flex-item-nav"><a href="about.html">About</a></li>
+        </ul>
+        <a class="toggle" onclick="showNav()">
+          <i class="fa-solid fa-taxi"></i></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-container">
+        <div class="flex-item palette1">
+          <h2>Why Choose Ambassador?</h2>
+          <p>
+            Ambassador Transportation Corporation's goal is to provide the best ground and airport transportation service on Vancouver Island. All our drivers are professional and have a wealth of experience, which is put to use in all our services.
+            
+            
+          </p>
+          <p>
+            We offer shuttle services from Comox Airport to Comox Valley and surrounding areas, including Nanaimo and Tofino.
+          </p>
+          <p>
+            For those extra special occasions when you want to make a grand entrance and travel in style, we also provide limousine services.
+          </p>
+          <p>
+            With lots of activities all year round, you don't ever have to miss out. We will arrange to get you and your group there and home safely afterwards.
+          </p>
+          <button>ddd</button>
+        </div>
+
+        <div class="flex-item palette1">
+          <figure>
+            <img
+              class="picture"
+              src="images/highway.jpg"
+              alt="Image of a highway"
+              width="100%";
+              height="auto";
+        
+            />
+            <figcaption>Lorem ipsum dolor sit amet</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="flex-container">
+        <div class="flex-item palette1">
+          <figure>
+            <img
+              class="picture"
+              src="images/highway.jpg"
+              alt="Image of a highway"
+              width=" 100%";
+        
+            />
+            <figcaption>Lorem ipsum dolor sit amet</figcaption>
+          </figure>
+        </div>
+
+        <div class="flex-item palette1">
+          <h2>Lorem</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          
+        </div>
+      </section>
+    </main>
+    <footer class="palette2">
+      <section class="flex-container footer-item palette3">
+        <div class="flex-item palette3">
+          <h4>Contact Us</h4>
+          <p>
+            Telephone (Local): 1-250--339-5252
+          </p>
+          <p>
+            Telephone (Out of area): 1-877-339-5252
+          </p>
+          <p>
+            <a href = "mailto: gowithambassador@gmail.com">gowithambassador@gmail.com</a>
+          </p>
+          
+        </div>
+        
+        <div class="flex-item palette3">
+          <h4>Upcoming Events</h4>
+          <h4>FAQ</h4>
+          <!-- Add font awesome icons -->
+<a href="https://www.facebook.com/ambassadorshuttle" "#" class="fa fa-facebook"></a>
+<a href="https://twitter.com/ComoxShuttle" "#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UC1MZk4X-pUmuVUcVNwKm1AQ" "#" class="fa fa-youtube"></a>
+        </div>
+        
+      </section>
+      <small
+        >Copyright &copy; 2022 This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</small
+      >
+    </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+/* Colours used */
+/*
+dark grey rgb(108, 108, 106)
+very light grey rgb(227, 227, 224)
+light yellow rgb(240, 241, 177)
+dark yellow rgb(209, 189, 6)
+*/
+
+
+
+/*global styles*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  /*SemiBold 600 Italic*/
+  font-size: 5rem;
+  color: rgb(209, 189, 6);
+}
+
+h2 {
+  /*Medium 500 Italic*/
+  font-size: 4rem;
+  color: rgb(240, 241, 177);
+}
+
+h3 {
+  /*Regular 400 Italic*/
+  font-size: 3rem;
+}
+
+h4{
+  font-size: 2rem;/*Regular 400*/
+}
+
+header {
+  position: sticky;
+  top:0;
+  background-color: rgb(108, 108, 106);
+  margin: auto;
+  padding: 5px;
+  background-image: url("images/treesBackgroundBW.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+header img{
+  float:right;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column; 
+  background-color: rgb(227, 227, 224);
+}
+
+
+
+.wrap {
+  flex-wrap: wrap; /* The wrap value specifies that the flex items will wrap if necessary */
+}
+
+.nowrap {
+  flex-wrap: nowrap; /*The nowrap value specifies that the flex items will not wrap (this is the default)*/
+}
+
+.flex-item {
+  padding: 15px;
+  border-radius: 7px;
+  margin: 15px;
+  overflow: auto;
+  flex-grow: 1;
+  position:relative;
+  text-align: center;
+}
+
+
+.footer-item{
+  
+  justify-content: center;
+}
+
+.flex-item-nav {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  width: 20%;
+  justify-content: space-around;
+}
+
+/*Style for navigation */
+nav ul {
+  list-style-type: none;
+  color: black;
+  overflow: auto;
+ margin:0;
+  padding: 0;
+  display:none;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: circle;
+  color: black;
+  margin:0;
+  padding: 10px;
+}
+
+nav li a {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(240, 241, 177);
+ 
+  transition: color 0.5s ease-in-out;
+}
+
+nav li a:hover {
+  background-color: rgb(209, 189, 6);
+  color: black;
+  
+}
+
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+.show-items {
+  display: flex;
+}
+
+/*Styles for buttons at end of sections */
+button {
+  display: block;
+  margin:0 auto;
+  background-color: rgb(209, 189, 6);
+  color: black;
+  padding: 15px;
+  border: none;
+  border-radius: 7px;
+  font-size: large;
+  cursor:pointer;
+  transition: color 0.5s ease-in-out;
+  align-self:middle;
+  }
+
+  button:hover{
+    background-color: black;
+  color:white;
+  }
+
+  .btn-container{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+ }
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+td.merge {
+  text-align: center;
+  font-style: italic;
+}
+
+tfoot {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  background-color: #c5c5c5;
+}
+/*Styles for social media buttons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.palette1 {
+  background-color: rgb(108, 108, 106);
+  color: black;
+}
+
+.palette2 {
+  background-color: black;
+  color: rgb(240, 241, 177);
+}
+
+.palette3 {
+  background-color: black;
+  color:white;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .flex-container{
+    display:flex;
+    flex-direction: row;
+  }
+
+  nav .menu-label {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .flex-item{
+    flex-grow: 1;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  
+
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav ul,
+  main {
+    width: 100%;
+    margin: 0;
+  }
+}
